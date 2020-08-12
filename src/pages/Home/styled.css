@@ -1,9 +1,10 @@
+
 div.menu {
   width: 100%;
   height: 7.5vh;
   background-color: rgb(42, 42, 42);
   display: flex;
-}
+} 
 
 div.menu img {
   padding-right: 3vh;
@@ -50,7 +51,7 @@ div.menu input{
 div.header {
   display: flex;
   justify-content: right;
-  border:thin solid #d3d3d3;
+  border-bottom:thin solid #d3d3d3;
 }
 
 section.info {  
@@ -59,6 +60,7 @@ section.info {
 
 section.info-user {
   display: flex;
+
 }
 
 section.info-user img {
@@ -67,26 +69,27 @@ section.info-user img {
   width: 20vh;
   height: 20vh;
   border-radius: 10px;
+  padding-right: 5vh;
 }
 
 section.more-info{
   margin-top: 15vh;
-  margin-left: -18vh;
+  margin-left: -38%;
 }
 
 .info h1 {
   font-size: 20px;
   font-weight: normal;
   padding-left: 2vh;
+  flex: 1 1 auto;
 }
 
 .info a {
- margin-top: 2vh;
  font-size: 12px;
  background-color: white;
  padding-right: 3vh;
  color: black ;
- text-decoration: none
+ text-decoration: none;
 }
 
 div.header section.button-bottom {
@@ -94,6 +97,54 @@ div.header section.button-bottom {
   padding: 2vh;
   cursor: pointer;
   margin-left: 1vh;
+  color: #807e7e;
+}
+
+section.repositorios {
+  width: 90%;
+  padding-bottom: 2vh;
+}
+
+section.repositorios h3 {
+  margin-left: 33vh;
+  padding-bottom: 2vh;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+section.cards {
+  width: 80%;
+  padding-bottom: 2vh;
+  margin-left: 25vh;
+}
+
+section.repositorios ul {
+  display: inline-block;
+  width: 25%;
+}
+
+section.repositorios li {
+  list-style: none;
+  display: flex;
+}
+
+section.card {
+  width: 35vh;
+  height: 15vh;
+  border: thin solid #d3d3d3;
+  border-radius: 4px;
+  padding: 2vh;
+  margin-left: 2vh;
+}
+
+section.card a {
+  cursor: pointer;
+  font-size: 2.5vh;
+  font-weight: bold;
+  color: rgb(88, 88, 221);
+}
+
+section.card p {
   color: #807e7e;
 }
 
@@ -105,6 +156,8 @@ section.search {
   margin-left: 33vh;
   width: 100%;
   padding-top: 2vh;
+  border-bottom: thin solid #d3d3d3;
+  padding-bottom: 2vh;
 }
 
 section.search input {
@@ -127,10 +180,13 @@ section.search button {
 }
 
 div.all-repositorios {
+  height: 100%;
+  display: flex;
   width: 90%;
 }
 
 section.listagem {
+  width: 80%;
   margin-left: 28vh;
   margin-right: 30vh;
   margin-top: 5vh;
@@ -142,6 +198,7 @@ section.listagem li {
 
 section.card-repo {
   border-bottom: thin solid #d3d3d3;
+  height: 16.5vh;
 }
 
 section.card-repo a {
@@ -154,11 +211,72 @@ section.card-repo a {
 
 section.card-repo p {
   color: #807e7e;
+  margin-bottom: 3vh;
+}
+
+section.card span#language {
+  color: rgb(88, 88, 221);
+  background-color: rgba(235, 235, 250, 0.692);
+  padding: 0.7vh;
+  border-radius: 20px;
+  border-bottom: thin solid #d3d3d3;
 }
 
 section.description span {
   margin-right: 3.5vh;
-  color: #807e7e;
+  color: rgb(88, 88, 221);
+  background-color: rgba(235, 235, 250, 0.692);
+  padding: 0.7vh;
+  border-radius: 20px;
+  border-bottom: thin solid #d3d3d3;
 }
 
+div.rodape {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
 
+section.sec-rodape {
+  display: flex;
+  align-items: center;
+  width: 20%;
+  margin-bottom: 2vh;
+}
+
+section.sec-rodape p {
+  font-size: 12px;
+  margin-right: 3vh;
+  color: #6d6c6c;
+}
+
+button.btn-rodape {
+  border: thin solid #d3d3d3;
+  background-color: white;
+  border-radius: 4px;
+  color: #6d6c6c;
+  cursor: pointer;
+  width: 10vh;
+  height: 3vh;
+  margin-right: 3vh;
+}
+
+div.div-footer {
+  width: 100%;
+  border-top: thin solid #d3d3d3;
+  height: 10vh;
+}
+
+section.footer {
+  margin-top: 5vh;
+  display: flex;
+  justify-content: center;
+  margin-right: 8.5vh;
+}
+
+section.footer a {
+   color: rgb(88, 88, 221);
+   margin-left: 2vh;
+   margin-right: 2vh;
+   margin-top: 3vh;
+}
