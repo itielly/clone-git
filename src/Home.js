@@ -3,9 +3,9 @@ import { useParams } from 'react-router-dom';
 import './App.css';
 import axios from 'axios';
 import logo from './assets/github-logo2.png'
-import { Home } from 'react-feather';
 
-function App() {
+
+function Home() {
   
   const { repository } = useParams();
   const [repos, setRepos] = useState([]);
@@ -108,4 +108,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
