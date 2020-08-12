@@ -8,24 +8,20 @@ import { Home } from 'react-feather';
 function App() {
   
   const { repository } = useParams();
-  const [repos, setRepos] = useState([])
-  const [reposPage, setReposPage] = useState(1)
+  const [repos, setRepos] = useState([]);
   const [ owner, setOwner] = useState({});
-  const [username, setUsername] = useState(repository || 'camunda');
+  const [username] = useState(repository || 'camunda');
   
   useEffect(() => {
       async function loadRepos() {
         const response = await axios.get(`https://api.github.com/users/${username}/repos`, {
-          params: {
-            page: reposPage,
-            per_page: 5
-          }
+          
         } );
         setRepos( response.data)
         
       }
       loadRepos()
-     }, [])
+     }, [username])
 
      useEffect(() => {
         async function loadOwner() {
@@ -34,7 +30,7 @@ function App() {
           console.log(response.data)
         }
         loadOwner()
-       }, [])
+       }, [username])
 
 
 
