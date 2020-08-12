@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import './App.css';
 import axios from 'axios';
 import logo from './assets/github-logo2.png'
+import { Home } from 'react-feather';
 
 function App() {
   
@@ -45,10 +46,10 @@ function App() {
         <input type="text" placeholder="Search or jump to..." />
         <button id="btn-input">/</button>
         <section className="menu-ancora">
-        <a>Pull Request</a>
-        <a>Issues</a>
-        <a>Marktplace</a>
-        <a>Explore</a>
+        <a href={Home}>Pull Request</a>
+        <a href={Home}>Issues</a>
+        <a href={Home}>Marktplace</a>
+        <a  href={Home} >Explore</a>
         </section>
       </div>
 
@@ -59,17 +60,17 @@ function App() {
              <img src={owner.avatar_url || ''} alt="perfil"/> 
              <h1>{ owner.name }</h1>
              <section className="more-info">
-             <a>{owner.location}</a>
-             <a>{owner.blog}</a>
-             <a>{owner.email}</a> 
+             <a  href={Home}>{owner.location}</a>
+             <a  href={Home}>{owner.blog}</a>
+             <a  href={Home}>{owner.email}</a> 
              </section>
             </section>
          
            <section className="button-bottom">
-           <a>Repositories</a>
-           <a>Packages</a>
-           <a> People</a>
-           <a>Projects</a>
+           <a  href={Home}>Repositories</a>
+           <a  href={Home}>Packages</a>
+           <a  href={Home}> People</a>
+           <a  href={Home}>Projects</a>
            </section>
            </section>
       </div>
@@ -92,7 +93,7 @@ function App() {
           <ul>
             <li key={repo.id}>
                <section className="card-repo">
-                 <a>{repo.name}</a>
+                 <a  href={Home}>{repo.name}</a>
                  <p>{repo.description}</p>
                  <section className="description">
                  <span>Language: {repo.language}</span>
