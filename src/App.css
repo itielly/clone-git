@@ -1,38 +1,161 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+div.menu {
+  width: 100%;
+  height: 7.5vh;
+  background-color: rgb(42, 42, 42);
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+div.menu img {
+  padding-right: 3vh;
+  padding-left: 2vh;
+}
+
+div.menu a {
+  background-color: rgb(42, 42, 42);
   color: white;
+  font-weight: bolder;
+  cursor: pointer;
+  font-size: 2vh;
+  margin-right: 2vh;
 }
 
-.App-link {
-  color: #61dafb;
+section.menu-ancora {
+  margin-left: 5vh;
+  margin-top: 2.5vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+div.menu #btn-input {
+  background-color: #494848c5;
+  border:thin solid #a3a3a365;
+  border-radius: 4px;
+  color: #a3a3a365;
+  cursor: pointer;
+  width: 1vh;
+  height: 3vh;
+  margin-top: 2.3vh;
+  margin-left: -5vh;
+  padding-right: 2vh;
 }
+
+div.menu input{
+  background-color: #494848c5;
+  height: 4vh;
+  width: 40vh;
+  margin-top: 1.5vh;
+  border: none;
+  border-radius: 6px;
+}
+
+div.header {
+  display: flex;
+  justify-content: right;
+  border:thin solid #d3d3d3;
+}
+
+section.info {  
+  margin-left: 30vh;
+}
+
+section.info-user {
+  display: flex;
+}
+
+section.info-user img {
+  padding-top: 2vh;
+  margin-left: 2.5vh;
+  width: 20vh;
+  height: 20vh;
+  border-radius: 10px;
+}
+
+section.more-info{
+  margin-top: 15vh;
+  margin-left: -18vh;
+}
+
+.info h1 {
+  font-size: 20px;
+  font-weight: normal;
+  padding-left: 2vh;
+}
+
+.info a {
+ margin-top: 2vh;
+ font-size: 12px;
+ background-color: white;
+ padding-right: 3vh;
+}
+
+div.header section.button-bottom {
+  margin-top: 1vh;
+  padding: 2vh;
+  cursor: pointer;
+  margin-left: 1vh;
+  color: #807e7e;
+}
+
+div.corpo {
+  display: flex;
+}
+
+section.search {
+  margin-left: 33vh;
+  width: 100%;
+  padding-top: 2vh;
+}
+
+section.search input {
+  border: thin solid #d3d3d3;
+  margin-right: 5vh;
+  width: 55vh;
+  height: 3.5vh;
+  border-radius: 4px;
+}
+
+section.search button {
+  border: thin solid #d3d3d3;
+  background-color: white;
+  height: 4.5vh;
+  width: 12%;
+  border-radius: 4px;
+  margin-right: 1vh;
+  color: #6d6c6c;
+  cursor: pointer;
+}
+
+div.all-repositorios {
+  width: 90%;
+}
+
+section.listagem {
+  margin-left: 28vh;
+  margin-right: 30vh;
+  margin-top: 5vh;
+}
+
+section.listagem li {
+  list-style: none;
+}
+
+section.card-repo {
+  border-bottom: thin solid #d3d3d3;
+}
+
+section.card-repo a {
+  
+  color: rgb(88, 88, 221);
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+section.card-repo p {
+  color: #807e7e;
+}
+
+section.description span {
+  margin-right: 3.5vh;
+  color: #807e7e;
+}
+
+
